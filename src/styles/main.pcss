@@ -1,0 +1,46 @@
+:root {
+  --color-correct: #7ED957;
+  --color-wrong: #FF6B6B;
+  --color-target: #4ECDC4;
+  --color-finger: #BFC9CA;
+  --color-background: #FFF9F0;
+  --color-text: #2D3436;
+  --color-border: #BFC9CA;
+
+  --border-radius: 8px;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  background-color: var(--color-background);
+  color: var(--color-text);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (max-width: 499px) {
+    padding: 0;
+  }
+}
